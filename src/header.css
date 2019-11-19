@@ -1,0 +1,31 @@
+.headerContainer {
+    display: flex;
+}
+
+.listOption {
+    display: flex;
+    flex: 1 1 85%;
+    justify-content: flex-start;
+}
+
+.listOption li {
+    padding-right: 15px;
+    font-weight: bold;
+}
+
+.zalandoLink {
+    flex: 1 1 15%;
+}
+
+.containerLogoZalando {
+    width: 100%;
+}
+
+.zalandoLogo {
+    width: 100%;
+}
+
+
+.listOption li {
+    list-style: none
+}
