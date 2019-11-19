@@ -19,13 +19,15 @@ export default class Home extends Component {
     return (
       <div className="container">
         {this.state.results.map(result => (
-          <div key={result.id} className="containerImg">
-            <img src={result.image} alt="product"></img>
-            <div className="containerInfo">
-              <h1>{result.section}</h1>
-              <p>{result.price}</p>
-            </div>
-            <p>{result.title}</p>
+          <div key={result.id} className="containerProduct">
+            <Link to={`/product/${result.id}`}>
+              <img src={result.image} alt="product"></img>
+              <div className="containerInfo">
+                <h1>{result.section}</h1>
+                <p>{result.price} TVA incluse</p>
+              </div>
+              <p>{result.title}</p>{' '}
+            </Link>
           </div>
         ))}
       </div>
