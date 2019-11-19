@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import getProducts from './service';
+import { getProducts } from './service';
+import { Link } from 'react-router-dom';
+
 import './home.css';
 
 export default class Home extends Component {
